@@ -1,0 +1,11 @@
+{
+    "name": "ترمینو — پایگاه اصطلاحات تخصصی",
+    "short_name": "ترمینو",
+    "start_url": ".",
+    "display": "standalone",
+    "dir": "rtl",
+    "lang": "fa",
+    "background_color": "#0e1418",
+    "theme_color": "#0f766e",
+    "icons": []
+}
