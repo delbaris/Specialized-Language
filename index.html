@@ -1441,25 +1441,22 @@
                 height: 58px
             }
 
-            main {
+            /* رفع باگ: سلکتور main.wrap اولویت بالاتری از .wrap دارد تا padding-bottom واقعاً اعمال شود؛
+     مقدار نیز همگام با منوی پایین، ناحیهٔ امن دستگاه را شامل می‌شود */
+            main.wrap {
                 padding-bottom: 120px
             }
 
-            .hero {
-                padding-top: 30px
+            main.wrap {
+                padding-bottom: calc(120px + env(safe-area-inset-bottom, 0px))
             }
 
-            .stats-strip {
-                gap: 9px
+            .toast {
+                bottom: 84px
             }
 
-            .stat {
-                min-width: 130px;
-                padding: 10px 14px
-            }
-
-            .sheet {
-                padding: 20px 18px 60px
+            .toast {
+                bottom: calc(90px + env(safe-area-inset-bottom, 0px))
             }
         }
 
